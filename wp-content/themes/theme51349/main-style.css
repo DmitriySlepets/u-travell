@@ -245,32 +245,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	border:none;
 	padding:0;
 }
-.nav__primary .sf-menu {
-	float:left;
-	display:block;
-	position:relative;
-	padding:0;
-	z-index:1;
-	border-right:1px solid #91e5e9;
-}
-@media (max-width: 767px) {
-	.nav__primary .sf-menu { display:none !important; }
-}
-.nav__primary .sf-menu >li {
-	background:none;
-	float:left;
-	position:relative;
-	border:none;
-	padding:0;
-	margin:0;
-	width:160px;
-	background:none;
-	border-left:1px solid #91e5e9;
-	border-right:1px solid #37bdc6;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-}
+.nav__primary .sf-menu {  float:left;  display:block;  position:relative;  padding:0;  z-index:1;  border-right:1px solid #91e5e9;  }
+.nav__primary .sf-menu >li {  background:none;  float:left;  position:relative;  border:none;  padding:0;  margin:0;  width:160px;  background:none;  border-left:1px solid #91e5e9;  border-right:1px solid #37bdc6;  -webkit-box-sizing:border-box;  -moz-box-sizing:border-box;  box-sizing:border-box;  }
 @media (min-width: 980px) and (max-width: 1200px) {
 	.nav__primary .sf-menu >li { width:120px; }
 }
@@ -669,11 +645,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	left:0;
 	z-index:-1;
 }
-.title-section {
-	margin:42px 0 0;
-	padding:0;
-	position:relative;
-}
+.title-section {  margin:60px 0 0;  padding:0;  position:relative;  }
 .title-section .title-header {
 	margin:0 0 24px;
 	font:600 25px/1.2em 'Open Sans', sans-serif;

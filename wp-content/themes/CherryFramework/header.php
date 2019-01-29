@@ -114,6 +114,19 @@
 		})
 	</script>
 	<meta name="verify-admitad" content="c6d3cdd375" />
+    <script type="text/javascript">
+        // ---------------------------------------------------------
+        // Закрытие активного меню, по нажатию на пустую область
+        // ---------------------------------------------------------
+        jQuery(document).ready(function() {
+            jQuery(".wrapper-dark").click(function () {
+                if(jQuery(this).hasClass("active")){
+                    alert(1);
+                    jQuery(".top-burger").click();
+                }
+            });
+        });
+    </script>
 </head>
 
 <body <?php body_class(); ?>>

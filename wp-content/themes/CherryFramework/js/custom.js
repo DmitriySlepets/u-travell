@@ -63,15 +63,6 @@ jQuery(document).ready(function(){
 			
 		}
 	});
-	
-	/*
-	if ( $('.wrapper-dark').hasClass('active') ) {
-		$('.wrapper-dark').click(function(){
-			console.log('$$$$$$$$$$$$$$$$$');
-		});
-	};
-	*/
-
 
 	jQuery(function($){
 		$(document).mouseup(function (e){ // событие клика по веб-документу
