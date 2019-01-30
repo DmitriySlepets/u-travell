@@ -22,11 +22,11 @@
 
 <script>
 	$(document).scroll(function () { 
-		header_scroll();	
+		//header_scroll();
 	});
 	
 	$( document ).ready(function() {
-   		header_scroll();
+   		//header_scroll();
 	});
 	
 	function header_scroll(){

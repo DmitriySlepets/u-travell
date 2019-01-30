@@ -84,7 +84,7 @@
 					}else{
 						$('.social-nets-wrapper.cloned').hide();
 						$('.logo.cloned').hide();
-						_this.removeClass('isStuck').css('padding-top','0');
+						_this.removeClass('isStuck').css('padding-top','0').css('margin-top','34px');
 						getOptions.listenSelector.removeClass('isStuck');
 						if(getOptions.pseudo){
 							_this.css({position:"relative", top:0});
