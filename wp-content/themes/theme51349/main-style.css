@@ -1826,3 +1826,8 @@ blockquote p { line-height:22px; }
 .nav-wrap.isStuck .nav__primary .sf-menu >li >.sub-menu{top:60px;}
 .nav-wrap.isStuck .nav__primary .sf-menu >li.home a{background: url(images/mini-logo.png) no-repeat 50%;  background-size: 50px;  background-position-y: 19px; background-color: #0a8890;}
 /*шапка - конец*/
+
+/*туры - начало*/
+#journey{background: #66d1d7;  min-height: 65px;  padding: 20px;}
+.bprices_widget .bp_results {  background-image: radial-gradient(circle at 50% 50%, #0a8890 12%, #03b0bb 100%);  }
+/*туры-конец*/
