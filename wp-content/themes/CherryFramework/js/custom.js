@@ -268,3 +268,4 @@ function createCookie(name, value, days) {
 function deleteCookie(name) {
 	createCookie( name, "", { expires: -1 } );
 }
+

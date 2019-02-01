@@ -1830,4 +1830,7 @@ blockquote p { line-height:22px; }
 /*туры - начало*/
 #journey{background: #66d1d7;  min-height: 65px;  padding: 20px;}
 .bprices_widget .bp_results {  background-image: radial-gradient(circle at 50% 50%, #0a8890 12%, #03b0bb 100%);  }
+@media (max-width: 400px) {
+	#tour_best_price{margin-left: -12px;}
+}
 /*туры-конец*/

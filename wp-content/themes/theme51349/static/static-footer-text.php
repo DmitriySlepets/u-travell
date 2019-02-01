@@ -4,7 +4,7 @@
 	<?php if($myfooter_text){?>
 		<?php echo of_get_option('footer_text'); ?>
 	<?php } else { ?>
-		<a href="<?php echo home_url(); ?>/" title="<?php bloginfo('description'); ?>" class="site-name"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-footer.png"></a> <span>&copy; <?php echo date('Y'); ?> | <a href="<?php echo home_url(); ?>/privacy-policy/" title="<?php echo theme_locals('privacy_policy'); ?>" class='privacy'><?php echo theme_locals("privacy_policy"); ?></a></span>
+		<a href="<?php echo home_url(); ?>/" title="<?php bloginfo('description'); ?>" class="site-name"><img style="height:40px;" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png"></a> <span>&copy; <?php echo date('Y'); ?> </span>
 	<?php } ?>
 	<?php if( is_front_page() ) { ?>
 		<!-- {%FOOTER_LINK} -->
