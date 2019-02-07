@@ -246,12 +246,12 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	padding:0;
 }
 .nav__primary .sf-menu {  float:left;  display:block;  position:relative;  padding:0;  z-index:1;  border-right:1px solid #91e5e9;  }
-.nav__primary .sf-menu >li {  background:none;  float:left;  position:relative;  border:none;  padding:0;  margin:0;  width:160px;  background:none;  border-left:1px solid #91e5e9;  border-right:1px solid #37bdc6;  -webkit-box-sizing:border-box;  -moz-box-sizing:border-box;  box-sizing:border-box;  }
+.nav__primary .sf-menu >li {  background:none;  float:left;  position:relative;  border:none;  padding:0;  margin:0;  width:130px;  background:none;  border-left:1px solid #91e5e9;  border-right:1px solid #37bdc6;  -webkit-box-sizing:border-box;  -moz-box-sizing:border-box;  box-sizing:border-box;  }
 @media (min-width: 980px) and (max-width: 1200px) {
-	.nav__primary .sf-menu >li { width:120px; }
+	.nav__primary .sf-menu >li { width:102px; }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-	.nav__primary .sf-menu >li { width:95px; }
+	.nav__primary .sf-menu >li { width:82px; }
 }
 .nav__primary .sf-menu >li.home { width:67px; }
 @media (min-width: 768px) and (max-width: 979px) {
@@ -1825,7 +1825,52 @@ blockquote p { line-height:22px; }
 .nav-wrap.isStuck .nav__primary .sf-menu >li >a{padding-bottom: 16px; padding-top: 28px;}
 .nav-wrap.isStuck .nav__primary .sf-menu >li >.sub-menu{top:60px;}
 .nav-wrap.isStuck .nav__primary .sf-menu >li.home a{background: url(images/mini-logo.png) no-repeat 50%;  background-size: 50px;  background-position-y: 19px; background-color: #0a8890;}
+.span3.hidden-phone{ display: none;}
+@media (max-width: 1378px) {
+	.nav__primary .sf-menu > li > a {font-size: 12px;}
+}
+@media (max-width: 1000px){
+	.nav__primary .sf-menu > li > a {font-size: 9px;}
+}
+@media (max-width: 767px){
+	.nav__primary .sf-menu > li > a {font-size: 12px;}
+}
+@media (min-width: 1201px) {
+	.nav__primary .sf-menu >li {width: 183.9px;}
+	.isStuck .nav__primary .sf-menu >li {width: 130px;}
+	.isStuck .nav__primary .sf-menu >li.home {width: 67px; }
+}
+@media (max-width: 1200px) and (min-width: 980px){
+	.nav__primary .sf-menu >li {width: 145.5px;}
+	.isStuck .nav__primary .sf-menu >li {width: 102px;}
+	.isStuck .nav__primary .sf-menu >li.home {width: 67px; }
+}
+@media (max-width: 979px) and (min-width: 768px){
+	.nav__primary .sf-menu >li { width: 114px;}
+	.isStuck .nav__primary .sf-menu >li {width: 78px;}
+	.isStuck .nav__primary .sf-menu >li.home {width: 67px; }
+}
+@media (min-width: 1201px){
+	.span9{width: 100%;}
+	.isStuck .span9 {width: 870px;}
+}
+@media (max-width: 1200px) and (min-width: 980px){
+	.span9{width: 100%;}
+	.isStuck .span9 {width: 700px;}
+}
+@media (max-width: 979px) and (min-width: 768px){
+	.span9{width: 100%;}
+	.isStuck .span9 {width: 538px;}
+}
 /*шапка - конец*/
+
+/*заголовок/контент - начало*/
+#content{padding-top: 0px;}
+.title-section {margin: 20px 0 0;}
+@media (max-width: 767px){
+	.title-section {margin: 60px 0 0;}
+}
+/*заголовок/контент - конец*/
 
 /*туры - начало*/
 #journey{background: #66d1d7;  min-height: 65px;  padding: 20px;}
@@ -1834,3 +1879,7 @@ blockquote p { line-height:22px; }
 	#tour_best_price{margin-left: -12px;}
 }
 /*туры-конец*/
+
+/*футер - начало*/
+.footer{z-index:1;}
+/*футер - конец*/
