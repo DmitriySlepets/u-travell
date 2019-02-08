@@ -113,6 +113,50 @@
 			}
 		})
 	</script>
+    <script type="text/javascript">
+        jQuery(function(){
+            jQuery('.sub-menu a').on('click', function(event) {
+                var tek_url = window.location.href;
+                //alert(tek_url);
+                var click_url = jQuery(this).attr("href").replace("#search","").replace("#statistics","").replace("#hot","").replace("#price","").replace("#map","").replace("#schedule","");
+                //alert(click_url);
+                //alert(tek_url.indexOf(click_url));
+                if(tek_url.indexOf(click_url) > 0) {
+                    // отменяем стандартное действие
+                    event.preventDefault();
+
+                    var sc = jQuery(this).attr("href").replace("/tours/", "").replace("/hotels/", "").replace("/tickets/avia/", "").replace("/tickets/train/", ""),
+                        dn = jQuery(sc).offset().top - 60;
+                    /*
+                    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+                    * dn - определяем положение блока на странице
+                    */
+
+                    $('html, body').animate({scrollTop: dn}, 1000);
+
+                    /*
+                    * 1000 скорость перехода в миллисекундах
+                    */
+                }
+            });
+            if(window.location.href.indexOf("#")>0){
+                event.preventDefault();
+            }
+            setTimeout(function(){
+                if(window.location.href.indexOf("#")>0){
+                    var sc = window.location.href.replace("http://u-travell.ru/tours/", "").replace("http://u-travell.ru/hotels/", "").replace("http://u-travell.ru/tickets/avia/", "").replace("http://u-travell.ru/tickets/train/", ""),
+                        dn = jQuery(sc).offset().top - 60;
+                    /*
+                    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+                    * dn - определяем положение блока на странице
+                    */
+
+                    $('html, body').animate({scrollTop: dn}, 1000);
+                }
+            },4000);
+
+        });
+    </script>
 	<meta name="verify-admitad" content="c6d3cdd375" />
     <script type="text/javascript">
         // ---------------------------------------------------------
