@@ -81,6 +81,12 @@
 						}else{
 							_this.css({position:"fixed", top:correctionValue});
 						}
+                        /**
+						 * codeking 11.02.19
+						 * fixed tags
+                         */
+						$("ul.tags").addClass("fixed");
+                        $("ul.tags").attr("style","width:" + $(".container").width() + "px;");
 					}else{
 						$('.social-nets-wrapper.cloned').hide();
 						$('.logo.cloned').hide();
@@ -92,6 +98,12 @@
 						}else{
 							_this.css({position:"absolute", top:0});
 						}
+                        /**
+                         * codeking 11.02.19
+                         * unfixed tags
+                         */
+                        $("ul.tags").removeClass("fixed");
+                        $("ul.tags").removeAttr("style");
 					}
 				}).trigger('scroll');
 

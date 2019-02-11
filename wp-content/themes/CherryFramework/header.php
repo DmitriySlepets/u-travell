@@ -115,13 +115,16 @@
 	</script>
     <script type="text/javascript">
         jQuery(function(){
-            jQuery('.sub-menu a').on('click', function(event) {
-                var tek_url = window.location.href;
+            // ---------------------------------------------------------
+            // пролистывание якорей
+            // ---------------------------------------------------------
+            jQuery('.tags a').on('click', function(event) {
+                //var tek_url = window.location.href;
                 //alert(tek_url);
-                var click_url = jQuery(this).attr("href").replace("#search","").replace("#statistics","").replace("#hot","").replace("#price","").replace("#map","").replace("#schedule","");
+                //var click_url = jQuery(this).attr("href").replace("#search","").replace("#statistics","").replace("#hot","").replace("#price","").replace("#map","").replace("#schedule","");
                 //alert(click_url);
                 //alert(tek_url.indexOf(click_url));
-                if(tek_url.indexOf(click_url) > 0) {
+                //if(tek_url.indexOf(click_url) > 0) {
                     // отменяем стандартное действие
                     event.preventDefault();
 
@@ -137,7 +140,7 @@
                     /*
                     * 1000 скорость перехода в миллисекундах
                     */
-                }
+               // }
             });
             if(window.location.href.indexOf("#")>0){
                 event.preventDefault();
@@ -154,8 +157,17 @@
                     $('html, body').animate({scrollTop: dn}, 1000);
                 }
             },4000);
-
+            // ---------------------------------------------------------
+            // рендомный фон авиа
+            // ---------------------------------------------------------
+            var tek_url = window.location.href;
+            if(tek_url.indexOf("/tickets/avia/") > 0) {
+                $("#motopress-main").attr("style", "background: url(/wp-content/themes/theme51349/images/avia" + getRandomInt(1, 4) + ".jpg);background-repeat: no-repeat; background-attachment: fixed; background-position: center top;");
+            }
         });
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
     </script>
 	<meta name="verify-admitad" content="c6d3cdd375" />
     <script type="text/javascript">
@@ -165,7 +177,7 @@
         jQuery(document).ready(function() {
             jQuery(".wrapper-dark").click(function () {
                 if(jQuery(this).hasClass("active")){
-                    alert(1);
+                    //alert(1);
                     jQuery(".top-burger").click();
                 }
             });

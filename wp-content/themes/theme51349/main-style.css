@@ -646,11 +646,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	z-index:-1;
 }
 .title-section {  margin:60px 0 0;  padding:0;  position:relative;  }
-.title-section .title-header {
-	margin:0 0 24px;
-	font:600 25px/1.2em 'Open Sans', sans-serif;
-	color:#5ecdd4;
-}
+.title-section .title-header {  margin:0 0 10px;  font:600 25px/1.2em 'Open Sans', sans-serif; color:#5ecdd4; padding-left: 10px; }
 .title-section .breadcrumb {
 	background:none;
 	padding:10px 0;
@@ -1827,13 +1823,13 @@ blockquote p { line-height:22px; }
 .nav-wrap.isStuck .nav__primary .sf-menu >li.home a{background: url(images/mini-logo.png) no-repeat 50%;  background-size: 50px;  background-position-y: 19px; background-color: #0a8890;}
 .span3.hidden-phone{ display: none;}
 @media (max-width: 1378px) {
-	.nav__primary .sf-menu > li > a {font-size: 12px;}
+	.nav__primary .sf-menu > li > a {font-size: 11px;}
 }
 @media (max-width: 1000px){
 	.nav__primary .sf-menu > li > a {font-size: 9px;}
 }
 @media (max-width: 767px){
-	.nav__primary .sf-menu > li > a {font-size: 12px;}
+	.nav__primary .sf-menu > li > a {font-size: 11px;}
 }
 @media (min-width: 1201px) {
 	.nav__primary .sf-menu >li {width: 183.9px;}
@@ -1883,3 +1879,21 @@ blockquote p { line-height:22px; }
 /*футер - начало*/
 .footer{z-index:1;}
 /*футер - конец*/
+
+/*теги - начало*/
+ul.tags{margin: 0px; margin-bottom: 10px; text-align: left; }
+ul.tags li{display: inline; margin-right: 5px;padding: 10px;}
+ul.tags li a{color: #66d1d7;  font-size: 14px; font-weight: 600; text-transform:uppercase;}
+@media (max-width: 1378px) {
+	ul.tags li a{font-size: 11px;}
+}
+@media (max-width: 1000px){
+	ul.tags li a {font-size: 9px;}
+}
+@media (max-width: 767px){
+	ul.tags li a {font-size: 11px;}
+}
+ul.tags.fixed{position: fixed; top: 0; margin-top: 45px; z-index: 100; background: #0a8890; border: 1px solid #0a8890;}
+ul.tags.fixed li a{color: #fff;}
+/*теги - конец*/
+

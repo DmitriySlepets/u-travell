@@ -142,6 +142,5 @@
 	<?php } ?>
 
 	<?php wp_footer(); ?> <!-- this is used by many Wordpress features and for plugins to work properly -->
-    <span class="bg_image_site opacity" style="background-image: url(../images/test.jpg); opacity: 1;"></span>
 </body>
 </html>
