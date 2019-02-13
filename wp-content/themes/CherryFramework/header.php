@@ -162,7 +162,10 @@
             // ---------------------------------------------------------
             var tek_url = window.location.href;
             if(tek_url.indexOf("/tickets/avia/") > 0) {
-                $("#motopress-main").attr("style", "background: url(/wp-content/themes/theme51349/images/avia" + getRandomInt(1, 4) + ".jpg);background-repeat: no-repeat; background-attachment: fixed; background-position: center top;");
+                $("#motopress-main").attr("style", "background: url(/wp-content/themes/theme51349/images/avia/avia" + getRandomInt(1, 14) + ".jpg);background-repeat: no-repeat; background-attachment: fixed; background-position: center top;");
+            }
+            if(tek_url.indexOf("/hotels/") > 0) {
+                $("#motopress-main").attr("style", "background: url(/wp-content/themes/theme51349/images/hotels/hotel" + getRandomInt(1, 14) + ".jpg);background-repeat: no-repeat; background-attachment: scroll;background-position: center top;background-repeat-y: repeat;");
             }
         });
         function getRandomInt(min, max) {
@@ -170,6 +173,7 @@
         }
     </script>
 	<meta name="verify-admitad" content="c6d3cdd375" />
+    <meta name="yandex-verification" content="c29ff4164082ca4a" />
     <script type="text/javascript">
         // ---------------------------------------------------------
         // Закрытие активного меню, по нажатию на пустую область
